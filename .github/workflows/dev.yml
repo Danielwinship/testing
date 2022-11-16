@@ -1,7 +1,5 @@
 name: hello-world
 on: push
-  release:
-    types: [!published] 
 jobs:
   my-job:
     runs-on: ubuntu-latest

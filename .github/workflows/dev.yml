@@ -1,9 +1,11 @@
 name: Dev-world
-on: push
+on: 
+  push:
+   tags-ignore:        
+      - v*
 jobs:
   my-job:
     runs-on: ubuntu-latest
-    if: github.ref_name != 'v*'
     steps:
       - name: my-step
         run: echo "Dev Hello World!"

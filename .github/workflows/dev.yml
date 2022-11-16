@@ -1,8 +1,9 @@
-name: hello-world
+name: Dev-world
 on: push
 jobs:
   my-job:
     runs-on: ubuntu-latest
+    if: github_ref.tag != 'release'
     steps:
       - name: my-step
-        run: echo "Hello World!"
+        run: echo "Dev Hello World!"

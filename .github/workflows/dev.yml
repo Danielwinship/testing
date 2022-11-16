@@ -3,7 +3,7 @@ on: push
 jobs:
   my-job:
     runs-on: ubuntu-latest
-    if: github.ref_tag != 'release'
+    if: github.ref_name != 'release'
     steps:
       - name: my-step
         run: echo "Dev Hello World!"

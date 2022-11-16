@@ -1,8 +1,8 @@
 name: Dev-world
 on: 
   push:
-   tags-ignore:        
-      - v*
+   branches-ignore:    
+      - 'releases/**'
 jobs:
   my-job:
     runs-on: ubuntu-latest

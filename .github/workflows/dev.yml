@@ -1,8 +1,11 @@
-name: hello-world
-on: push
+name: Dev-world
+on: 
+  push:
+   branches-ignore:    
+      - 'releases/**'
 jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
-        run: echo "Hello World!"
+        run: echo "Dev Hello World!"
